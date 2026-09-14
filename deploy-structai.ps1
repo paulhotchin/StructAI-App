@@ -22,5 +22,7 @@ git add .
 git commit -m "Auto-deploy StructAI-App"
 git push
 
+cd "E:\work\TQ\Kepler\StructAI\StructAI.App"
+
 Write-Host "=== Deployment complete ==="
 Write-Host "Open: https://paulhotchin.github.io/StructAI-App/"
