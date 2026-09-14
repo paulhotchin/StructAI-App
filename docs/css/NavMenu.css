@@ -1,0 +1,53 @@
+/* E:\work\TQ\Kepler\StructAI\StructAI.App\wwwroot\css\NavMenu.css */
+/* ============================
+   NAV MENU CONTAINER
+   ============================ */
+
+.nav-menu {
+    padding: 0.5rem 0;
+}
+
+.nav-menu nav {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================
+   NAV ITEMS
+   ============================ */
+
+.nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    /* dull cyan */
+    /* color: #7fd0ff !important; */
+
+    color: #ffb866 !important;
+
+    /* bright orange */
+    /* color: #ffc47a !important;   */
+    /* UI orange */
+    /* color: #ffd39b !important;   */
+    background-color: #444;
+}
+
+.nav-link.active {
+    background-color: #555;
+}
+
+/* Icon spacing */
+.nav-link span {
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,30 @@
+{
+  "Steps": [
+    {
+      "Name": "Site Geometry",
+      "Description": "Define site north and boundary polygon.",
+      "Fields": [
+        {
+          "Name": "RealNorthDegrees",
+          "Label": "Real North (deg)",
+          "Type": "Number",
+          "Bind": "Site.RealNorthDegrees",
+          "Default": 0,
+          "Validation": {
+            "Min": -360,
+            "Max": 360
+          },
+          "UI": { "Hint": "Degrees clockwise from plan-up" }
+        },
+        {
+          "Name": "Boundary",
+          "Label": "Boundary Points",
+          "Type": "PointList",
+          "Bind": "Site.Boundary",
+          "Validation": { "MinCount": 3 },
+          "UI": { "Editor": "PointListEditor" }
+        }
+      ]
+    }
+  ]
+}
