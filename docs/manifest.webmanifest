@@ -2,7 +2,7 @@
   "name": "StructAI",
   "short_name": "StructAI",
   "id": "/StructAI-App/",
-  "start_url": "/StructAI-App/home",
+  "start_url": "/StructAI-App/",
   "scope": "/StructAI-App/",
   "display": "standalone",
   "background_color": "#ffffff",
