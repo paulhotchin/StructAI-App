@@ -1,0 +1,23 @@
+{
+  "name": "StructAI",
+  "short_name": "StructAI",
+  "id": "/StructAI/",
+  "start_url": "/StructAI/",
+  "scope": "/StructAI/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#03173d",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

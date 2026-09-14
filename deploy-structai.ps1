@@ -16,6 +16,9 @@ Remove-Item "$docs\*" -Recurse -Force
 Write-Host "=== Copying published build ==="
 robocopy $publish $docs /MIR
 
+Write-Host "=== Overlaying deploy-specific files ==="
+robocopy $deploy $docs /MIR
+
 Write-Host "=== Committing and pushing to GitHub ==="
 cd "E:\work\TQ\Repos\StructAI-App"
 git add .
