@@ -17,7 +17,7 @@ Write-Host "=== Copying published build ==="
 robocopy $publish $docs /MIR
 
 Write-Host "=== Overlaying deploy-specific files ==="
-robocopy $deploy $docs /MIR
+robocopy $deploy $docs /E
 
 Write-Host "=== Committing and pushing to GitHub ==="
 cd "E:\work\TQ\Repos\StructAI-App"
