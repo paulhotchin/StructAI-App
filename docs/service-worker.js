@@ -1,17 +1,21 @@
 // E:\work\TQ\Kepler\StructAI\StructAI.App\wwwroot.deploy\service-worker.js
 
+// GitHub Pages–safe service worker for StructAI-App
+
+const BASE = "/StructAI-App/";
 const CACHE = "structai-cache-v1";
 
 self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(CACHE).then(cache => {
             return cache.addAll([
-                "/",
-                "index.html",
-                "manifest.webmanifest",
-                "css/app.css",
-                "icon-192.png",
-                "icon-512.png"
+                BASE,                          // root of the app
+                BASE + "index.html",
+                BASE + "manifest.webmanifest",
+                BASE + "css/app.css",
+                BASE + "favicon.png",
+                BASE + "icon-192.png",
+                BASE + "icon-512.png"
             ]);
         })
     );
