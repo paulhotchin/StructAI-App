@@ -1,0 +1,12 @@
+{
+  "HourlyRate": 0,
+  "HoursPerWeek": 0,
+  "AdminHours": 0,
+  "InterruptionsPerDay": 0,
+  "MinutesLostPerInterruption": 0,
+
+  "WeeklyCostAdmin": 0,
+  "WeeklyCostInterruptions": 0,
+  "TotalWeeklyLoss": 0,
+  "AnnualLoss": 0
+}

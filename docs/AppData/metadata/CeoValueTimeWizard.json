@@ -1,0 +1,77 @@
+{
+  "id": "CeoValueTime",
+  "title": "CEO - Value Your Time",
+  "steps": [
+    {
+      "id": "DataEntry",
+      "title": "Step 1 — Enter Your Time Inputs",
+      "fields": [
+        {
+          "id": "HourlyRate",
+          "label": "Your hourly value ($/hr)",
+          "type": "number",
+          "bind": "HourlyRate",
+          "required": true
+        },
+        {
+          "id": "HoursPerWeek",
+          "label": "Hours worked per week",
+          "type": "number",
+          "bind": "HoursPerWeek",
+          "required": true
+        },
+        {
+          "id": "AdminHours",
+          "label": "Hours wasted on admin per week",
+          "type": "number",
+          "bind": "AdminHours",
+          "required": true
+        },
+        {
+          "id": "InterruptionsPerDay",
+          "label": "Interruptions per day",
+          "type": "number",
+          "bind": "InterruptionsPerDay",
+          "required": true
+        },
+        {
+          "id": "MinutesLostPerInterruption",
+          "label": "Minutes lost per interruption",
+          "type": "number",
+          "bind": "MinutesLostPerInterruption",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "Results",
+      "title": "Step 2 — Results",
+      "fields": [
+        {
+          "id": "WeeklyCostAdmin",
+          "label": "Cost of admin time per week",
+          "type": "calculated",
+          "bind": "WeeklyCostAdmin"
+        },
+        {
+          "id": "WeeklyCostInterruptions",
+          "label": "Cost of interruptions per week",
+          "type": "calculated",
+          "bind": "WeeklyCostInterruptions"
+        },
+        {
+          "id": "TotalWeeklyLoss",
+          "label": "Total weekly time-value loss",
+          "type": "calculated",
+          "bind": "TotalWeeklyLoss"
+        },
+        {
+          "id": "AnnualLoss",
+          "label": "Annualised loss",
+          "type": "calculated",
+          "bind": "AnnualLoss"
+        }
+      ]
+    }
+  ]
+}
