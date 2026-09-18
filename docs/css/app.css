@@ -263,3 +263,18 @@ button:active,
 .point-row .btn {
     flex: 0 0 auto;
 }
+
+.svg-container {
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.point-svg {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #ccc;
+}
