@@ -29,12 +29,13 @@
 
 @media (max-width: 768px) {
     .ceo-results-table[b-r2r0r713vg] {
-        font-size: 0.68rem;
+        font-size: 0.56rem;
+        letter-spacing: -0.01em;
     }
 
     .ceo-results-table th[b-r2r0r713vg],
     .ceo-results-table td[b-r2r0r713vg] {
-        padding: 0.25rem 0.12rem;
-        line-height: 1.15;
+        padding: 0.16rem 0.02rem;
+        line-height: 1.05;
     }
 }
