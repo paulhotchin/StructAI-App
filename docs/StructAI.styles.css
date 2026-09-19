@@ -1,0 +1,40 @@
+/* /Components/CeoValueTimeResults.razor.rz.scp.css */
+.ceo-results-table-container[b-r2r0r713vg] {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.ceo-results-table[b-r2r0r713vg] {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    margin-bottom: 1rem;
+}
+
+.ceo-results-table th[b-r2r0r713vg],
+.ceo-results-table td[b-r2r0r713vg] {
+    padding: 0.35rem 0.3rem;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.ceo-results-table th:first-child[b-r2r0r713vg] {
+    width: 23%;
+}
+
+.ceo-results-table th:not(:first-child)[b-r2r0r713vg] {
+    width: 19.25%;
+}
+
+@media (max-width: 768px) {
+    .ceo-results-table[b-r2r0r713vg] {
+        font-size: 0.68rem;
+    }
+
+    .ceo-results-table th[b-r2r0r713vg],
+    .ceo-results-table td[b-r2r0r713vg] {
+        padding: 0.25rem 0.12rem;
+        line-height: 1.15;
+    }
+}

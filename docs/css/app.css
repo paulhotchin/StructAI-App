@@ -279,35 +279,3 @@ button:active,
     border: 1px solid #ccc;
 }
 
-.ceo-results-table {
-    width: 100%;
-    table-layout: fixed;
-    margin-bottom: 1rem;
-}
-
-.ceo-results-table th,
-.ceo-results-table td {
-    padding: 0.35rem 0.3rem;
-    text-align: center;
-    overflow-wrap: anywhere;
-}
-
-.ceo-results-table th:first-child {
-    width: 23%;
-}
-
-.ceo-results-table th:not(:first-child) {
-    width: 19.25%;
-}
-
-@media (max-width: 768px) {
-    .ceo-results-table {
-        font-size: 0.68rem;
-    }
-
-    .ceo-results-table th,
-    .ceo-results-table td {
-        padding: 0.25rem 0.12rem;
-        line-height: 1.15;
-    }
-}
