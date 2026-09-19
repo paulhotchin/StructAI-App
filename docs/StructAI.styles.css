@@ -19,6 +19,10 @@
     overflow-wrap: anywhere;
 }
 
+.ceo-results-table th[b-r2r0r713vg] {
+    color: red;
+}
+
 .ceo-results-table th:first-child[b-r2r0r713vg] {
     width: 23%;
 }
@@ -29,7 +33,7 @@
 
 @media (max-width: 768px) {
     .ceo-results-table[b-r2r0r713vg] {
-        font-size: 0.56rem;
+        font-size: 0.28rem;
         letter-spacing: -0.01em;
     }
 
