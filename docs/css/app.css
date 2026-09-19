@@ -279,3 +279,49 @@ button:active,
     border: 1px solid #ccc;
 }
 
+/* CEO results table */
+.ceo-results-table-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.ceo-results-table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    margin-bottom: 1rem;
+}
+
+.ceo-results-table th,
+.ceo-results-table td {
+    padding: 0.35rem 0.3rem;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.ceo-results-table th {
+    color: red;
+}
+
+.ceo-results-table th:first-child {
+    width: 23%;
+}
+
+.ceo-results-table th:not(:first-child) {
+    width: 19.25%;
+}
+
+@media (max-width: 768px) {
+    .ceo-results-table {
+        font-size: 0.28rem;
+        letter-spacing: -0.01em;
+    }
+
+    .ceo-results-table th,
+    .ceo-results-table td {
+        padding: 0.16rem 0.02rem;
+        line-height: 1.05;
+    }
+}
+
