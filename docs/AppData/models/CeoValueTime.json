@@ -1,12 +1,9 @@
 {
-  "HourlyRate": 0,
-  "HoursPerWeek": 0,
-  "AdminHours": 0,
-  "InterruptionsPerDay": 0,
-  "MinutesLostPerInterruption": 0,
+  "WeeksPerYear": 52,
+  "HoursPerWeek": 40,
+  "AnnualGrowthPercent": 0,
 
-  "WeeklyCostAdmin": 0,
-  "WeeklyCostInterruptions": 0,
-  "TotalWeeklyLoss": 0,
-  "AnnualLoss": 0
+  "AnnualHours": 0,
+  "AnnualValue": 0,
+  "AnnualValueWithGrowth": 0
 }

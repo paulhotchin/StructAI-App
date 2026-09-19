@@ -4,72 +4,52 @@
   "steps": [
     {
       "id": "DataEntry",
-      "title": "Step 1 — Enter Your Time Inputs",
+      "title": "Enter your time inputs",
       "fields": [
         {
-          "id": "HourlyRate",
-          "label": "Your hourly value ($/hr)",
+          "id": "WeeksPerYear",
+          "label": "Weeks per year",
           "type": "number",
-          "bind": "HourlyRate",
+          "bind": "WeeksPerYear",
           "required": true
         },
         {
           "id": "HoursPerWeek",
-          "label": "Hours worked per week",
+          "label": "Hours per week",
           "type": "number",
           "bind": "HoursPerWeek",
           "required": true
         },
         {
-          "id": "AdminHours",
-          "label": "Hours wasted on admin per week",
+          "id": "AnnualGrowthPercent",
+          "label": "Annual growth percentage",
           "type": "number",
-          "bind": "AdminHours",
-          "required": true
-        },
-        {
-          "id": "InterruptionsPerDay",
-          "label": "Interruptions per day",
-          "type": "number",
-          "bind": "InterruptionsPerDay",
-          "required": true
-        },
-        {
-          "id": "MinutesLostPerInterruption",
-          "label": "Minutes lost per interruption",
-          "type": "number",
-          "bind": "MinutesLostPerInterruption",
+          "bind": "AnnualGrowthPercent",
           "required": true
         }
       ]
     },
     {
       "id": "Results",
-      "title": "Step 2 — Results",
+      "title": "Results",
       "fields": [
         {
-          "id": "WeeklyCostAdmin",
-          "label": "Cost of admin time per week",
+          "id": "AnnualHours",
+          "label": "Annual hours",
           "type": "calculated",
-          "bind": "WeeklyCostAdmin"
+          "bind": "AnnualHours"
         },
         {
-          "id": "WeeklyCostInterruptions",
-          "label": "Cost of interruptions per week",
+          "id": "AnnualValue",
+          "label": "Annual value",
           "type": "calculated",
-          "bind": "WeeklyCostInterruptions"
+          "bind": "AnnualValue"
         },
         {
-          "id": "TotalWeeklyLoss",
-          "label": "Total weekly time-value loss",
+          "id": "AnnualValueWithGrowth",
+          "label": "Annual value with growth",
           "type": "calculated",
-          "bind": "TotalWeeklyLoss"
-        },
-        {
-          "id": "AnnualLoss",
-          "label": "Annualised loss",
-          "type": "calculated",
-          "bind": "AnnualLoss"
+          "bind": "AnnualValueWithGrowth"
         }
       ]
     }
