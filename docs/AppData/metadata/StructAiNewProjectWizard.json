@@ -1,0 +1,17 @@
+{
+  "id": "StructAiNewProject",
+  "title": "Struct AI - New Project",
+  "steps": [
+    {
+      "id": "ProjectDetails",
+      "title": "Project Details",
+      "description": "Set up the project you want to work on.",
+      "fields": [
+        { "id": "ProjectName", "label": "Name", "type": "text", "bind": "ProjectName" },
+        { "id": "ProjectRoute", "label": "Route", "type": "text", "bind": "ProjectRoute" },
+        { "id": "ClientName", "label": "Client name", "type": "text", "bind": "ClientName" },
+        { "id": "ProjectAddress", "label": "Project address", "type": "text", "bind": "ProjectAddress" }
+      ]
+    }
+  ]
+}

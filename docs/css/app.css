@@ -279,6 +279,48 @@ button:active,
     border: 1px solid #ccc;
 }
 
+.project-selector {
+    max-width: 720px;
+}
+
+.project-select-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-select-row label {
+    flex: 0 0 auto;
+    font-weight: 600;
+}
+
+.project-select-row select {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+.add-project-form {
+    display: grid;
+    gap: 0.5rem;
+    max-width: 420px;
+    margin-top: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .project-select-row {
+        flex-wrap: wrap;
+    }
+
+    .project-select-row label {
+        width: 100%;
+    }
+
+    .project-select-row select {
+        flex-basis: 100%;
+    }
+}
+
 /* CEO results table */
 .ceo-results-table-container {
     width: 100%;
@@ -316,6 +358,41 @@ button:active,
     .ceo-results-table {
         font-size: 1rem;
         letter-spacing: normal;
+    }
+}
+
+.cic-table,
+.cic-cashflow-table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 0.82rem;
+}
+
+.cic-table th,
+.cic-table td,
+.cic-cashflow-table th,
+.cic-cashflow-table td {
+    padding: 0.35rem 0.25rem;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+.cic-table th:first-child,
+.cic-cashflow-table th:first-child {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .cic-table,
+    .cic-cashflow-table {
+        font-size: 0.66rem;
+    }
+
+    .cic-table th,
+    .cic-table td,
+    .cic-cashflow-table th,
+    .cic-cashflow-table td {
+        padding: 0.2rem 0.1rem;
     }
 }
 
