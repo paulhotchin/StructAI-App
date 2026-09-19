@@ -1,5 +1,6 @@
 /* E:\work\TQ\Kepler\StructAI\StructAI.App\wwwroot\css\MainLayout.css */
 :root {
+    --structai-css-version: "CSS v1.1";
     --menu-bar-height: 56px;
     --top-action-bar-height: 60px;
     --bottom-action-bar-height: 90px;
@@ -32,6 +33,17 @@
 .app-title {
     font-size: 1.25rem;
     font-weight: 600;
+}
+
+.css-version {
+    color: #b8b8b8;
+    font-size: 0.72rem;
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
+.css-version::after {
+    content: var(--structai-css-version);
 }
 
 .navbar-toggler {
@@ -107,6 +119,12 @@
     padding: 0.75rem 1rem;
     border-bottom: 1px solid #333;
     z-index: 2500;
+}
+
+.desktop-title-bar .css-version {
+    position: absolute;
+    right: 1rem;
+    top: 1.05rem;
 }
 
 /* ============================
