@@ -1,7 +1,7 @@
 {
-  "WeeksPerYear": 52,
-  "HoursPerWeek": 40,
-  "AnnualGrowthPercent": 0,
+  "WeeksPerYear": 45,
+  "HoursPerWeek": 50,
+  "AnnualGrowthPercent": 15,
 
   "AnnualHours": 0,
   "AnnualValue": 0,
