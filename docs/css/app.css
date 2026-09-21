@@ -382,6 +382,11 @@ button:active,
     text-align: left;
 }
 
+.cic-cashflow-table .cic-cashflow-year-row th {
+    text-align: left;
+    background: #d9d9d9;
+}
+
 .cic-entry-table .cic-entry-item-column,
 .cic-entry-table th:first-child,
 .cic-entry-table td:first-child {
@@ -398,11 +403,15 @@ button:active,
 }
 
 .cic-entry-table .cic-entry-number-column {
-    width: 12.5%;
+    width: 10%;
 }
 
 .cic-entry-table .cic-entry-action-column {
-    width: 12.75%;
+    width: 5.25%;
+}
+
+.cic-entry-table .cic-entry-profit-column {
+    width: 10%;
 }
 
 .cic-entry-table thead th,
