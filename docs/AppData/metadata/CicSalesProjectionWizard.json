@@ -13,6 +13,12 @@
       "title": "Results",
       "description": "Revenue per annum by item.",
       "fields": []
+    },
+    {
+      "id": "CashFlow",
+      "title": "Cash flow",
+      "description": "Monthly cash flow based on projected sales.",
+      "fields": []
     }
   ]
 }
