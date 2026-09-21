@@ -382,6 +382,67 @@ button:active,
     text-align: left;
 }
 
+.cic-entry-table .cic-entry-item-column,
+.cic-entry-table th:first-child,
+.cic-entry-table td:first-child {
+    width: 33%;
+    min-width: 33%;
+}
+
+.cic-entry-table .cic-entry-price-column {
+    width: 25%;
+}
+
+.cic-entry-table .cic-entry-period-column {
+    width: 16.75%;
+}
+
+.cic-entry-table .cic-entry-number-column {
+    width: 12.5%;
+}
+
+.cic-entry-table .cic-entry-action-column {
+    width: 12.75%;
+}
+
+.cic-entry-table thead th,
+.cic-entry-table thead th:first-child {
+    text-align: center;
+}
+
+.cic-entry-table th:last-child,
+.cic-entry-table td:last-child {
+    border: none !important;
+    background: transparent;
+}
+
+.cic-entry-table td:nth-child(4) .form-control {
+    min-width: 4.5rem;
+}
+
+.cic-entry-table td:last-child .btn {
+    min-width: 4.5rem;
+    white-space: nowrap;
+}
+
+.cic-results-table .cic-results-item-column {
+    width: 24%;
+}
+
+.cic-results-table .cic-results-number-column {
+    width: 8%;
+}
+
+.cic-results-table .cic-results-revenue-column {
+    width: 17.33%;
+}
+
+.cic-results-table th:first-child,
+.cic-results-table td:first-child,
+.cic-results-table td:not(:first-child) {
+    white-space: nowrap;
+}
+
 @media (max-width: 768px) {
     .cic-table,
     .cic-cashflow-table {
@@ -393,6 +454,18 @@ button:active,
     .cic-cashflow-table th,
     .cic-cashflow-table td {
         padding: 0.2rem 0.1rem;
+    }
+
+    .cic-results-table .cic-results-item-column {
+        width: 28%;
+    }
+
+    .cic-results-table .cic-results-number-column {
+        width: 7%;
+    }
+
+    .cic-results-table .cic-results-revenue-column {
+        width: 17%;
     }
 }
 
