@@ -4,29 +4,20 @@
   "steps": [
     {
       "id": "PriceList",
-      "title": "Price List",
-      "description": "Review and adjust the CIC price assumptions.",
-      "fields": [
-        { "id": "AssessmentPrice", "label": "Assessment price", "type": "number", "bind": "AssessmentPrice" },
-        { "id": "DebriefPrice", "label": "Debrief price", "type": "number", "bind": "DebriefPrice" },
-        { "id": "AdvDebriefPrice", "label": "ADV and debrief price", "type": "number", "bind": "AdvDebriefPrice" },
-        { "id": "AdvPilotThreePrice", "label": "ADV pilot of 3 price", "type": "number", "bind": "AdvPilotThreePrice" },
-        { "id": "AdvPilotSixPrice", "label": "ADV pilot of 6 price", "type": "number", "bind": "AdvPilotSixPrice" },
-        { "id": "MonthlyCoachingPrice", "label": "Monthly coaching contract", "type": "number", "bind": "MonthlyCoachingPrice" },
-        { "id": "InHouseAiMonthlyPrice", "label": "In-house AI monthly account", "type": "number", "bind": "InHouseAiMonthlyPrice" },
-        { "id": "ProjectionYear", "label": "Projection year", "type": "number", "bind": "ProjectionYear" }
-      ]
-    },
-    {
-      "id": "CoachingContractOnly",
-      "title": "Coaching Contract Only",
-      "description": "2027 coaching contract sales and layered cashflow.",
+      "title": "Item data entry",
+      "description": "Add and price each sales item.",
       "fields": []
     },
     {
-      "id": "AI",
-      "title": "AI",
-      "description": "In-house unlimited client account with AI.",
+      "id": "DataEntry",
+      "title": "Data entry",
+      "description": "Enter the number per week, per month, and per year for each item.",
+      "fields": []
+    },
+    {
+      "id": "Results",
+      "title": "Results",
+      "description": "Revenue per annum by item.",
       "fields": []
     }
   ]
