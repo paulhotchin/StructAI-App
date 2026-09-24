@@ -3,7 +3,8 @@
   "PriceItems": [
     { "Name": "Assessment", "Price": 545, "ProfitFactor": 0.4, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
     { "Name": "Assessment Contract", "Price": 545, "ProfitFactor": 0.89, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
-    { "Name": "Debrief", "Price": 780, "ProfitFactor": 0.8, "Units": 0, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
+    { "Name": "Client ADV Repeat", "Price": 545, "ProfitFactor": 0.4, "Units": 16, "Period": 2, "UnitsPerWeek": 0.333, "UnitsPerMonth": 1.333, "UnitsPerYear": 16 },
+    { "Name": "Client ADV & Debrief Repeat", "Price": 1325, "ProfitFactor": 0.65, "Units": 16, "Period": 2, "UnitsPerWeek": 0.333, "UnitsPerMonth": 1.333, "UnitsPerYear": 16 },
     { "Name": "ADV & Debrief", "Price": 1325, "ProfitFactor": 0.65, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
     { "Name": "ADV & Debrief Contract", "Price": 1325, "ProfitFactor": 0.84, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
     { "Name": "ADV pilot of 3", "Price": 1635, "ProfitFactor": 0.4, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
