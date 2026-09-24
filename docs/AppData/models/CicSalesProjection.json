@@ -6,5 +6,18 @@
   "AdvPilotSixPrice": 3000,
   "MonthlyCoachingPrice": 1250,
   "InHouseAiMonthlyPrice": 6200,
-  "ProjectionYear": 2027
+  "ProjectionYear": 2027,
+  "PriceItems": [
+    { "Name": "Assessment", "Price": 545, "ProfitFactor": 0.4, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
+    { "Name": "Assessment Contract", "Price": 545, "ProfitFactor": 0.88, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
+    { "Name": "Debrief", "Price": 780, "ProfitFactor": 0.8, "Units": 0, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
+    { "Name": "ADV & Debrief", "Price": 1325, "ProfitFactor": 0.65, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
+    { "Name": "ADV & Debrief Contract", "Price": 1325, "ProfitFactor": 0.999, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
+    { "Name": "ADV pilot of 3", "Price": 1635, "ProfitFactor": 0.4, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
+    { "Name": "ADV pilot of 3 Contract", "Price": 1635, "ProfitFactor": 0.4, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
+    { "Name": "ADV pilot of 6", "Price": 3000, "ProfitFactor": 0.4, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
+    { "Name": "ADV pilot of 6 Contract", "Price": 3000, "ProfitFactor": 0.4, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
+    { "Name": "Coaching Retainer", "Price": 1250, "ProfitFactor": 0.8, "Perennial": true, "Units": 1, "Period": 3, "PeriodLocked": true, "UnitsPerWeek": 0.0576923077, "UnitsPerMonth": 0.25, "UnitsPerYear": 3 },
+    { "Name": "Client Account AI", "Price": 6200, "ProfitFactor": 0.8, "Perennial": true, "Units": 1, "Period": 4, "PeriodLocked": true, "UnitsPerWeek": 0.0576923077, "UnitsPerMonth": 0.25, "UnitsPerYear": 3 }
+  ]
 }
