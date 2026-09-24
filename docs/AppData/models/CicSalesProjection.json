@@ -9,7 +9,7 @@
   "ProjectionYear": 2027,
   "PriceItems": [
     { "Name": "Assessment", "Price": 545, "ProfitFactor": 0.4, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
-    { "Name": "Assessment Contract", "Price": 545, "ProfitFactor": 0.88, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
+    { "Name": "Assessment Contract", "Price": 545, "ProfitFactor": 0.89, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
     { "Name": "Debrief", "Price": 780, "ProfitFactor": 0.8, "Units": 0, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
     { "Name": "ADV & Debrief", "Price": 1325, "ProfitFactor": 0.65, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
     { "Name": "ADV & Debrief Contract", "Price": 1325, "ProfitFactor": 0.999, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
