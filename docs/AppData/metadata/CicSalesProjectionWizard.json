@@ -4,20 +4,20 @@
   "steps": [
     {
       "id": "PriceList",
-      "title": "Item data entry",
-      "description": "Add and price each sales item.",
+      "title": "ADVanced Insights Analysis and CUSTOMISED Coaching Reports",
+      "description": "Calculate Your Annual Sales & Profits",
+      "fields": []
+    },
+    {
+      "id": "CashFlow",
+      "title": "Cash Flow",
+      "description": "Monthly Cash Flow based on Projected Sales",
       "fields": []
     },
     {
       "id": "Results",
       "title": "Results",
-      "description": "Revenue per period by item.",
-      "fields": []
-    },
-    {
-      "id": "CashFlow",
-      "title": "Cash flow",
-      "description": "Monthly cash flow based on projected sales.",
+      "description": "Revenue per period by item",
       "fields": []
     }
   ]
