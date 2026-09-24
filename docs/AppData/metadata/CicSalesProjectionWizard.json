@@ -16,8 +16,8 @@
     },
     {
       "id": "Results",
-      "title": "Results",
-      "description": "Revenue per period by item",
+      "title": "Sales Results",
+      "description": "Product and Service Revenue",
       "fields": []
     }
   ]
