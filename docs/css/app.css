@@ -344,7 +344,10 @@ button:active,
 
 .ceo-results-table th {
     color: green;
-    /* color: red; */
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
 }
 
 .ceo-results-table th:first-child {
@@ -387,11 +390,24 @@ button:active,
     background: #d9d9d9;
 }
 
-.cic-entry-table .cic-entry-item-column,
-.cic-entry-table th:first-child,
-.cic-entry-table td:first-child {
+.cic-entry-table .cic-entry-enabled-column {
+    width: 6%;
+    min-width: 3.5rem;
+}
+
+.cic-entry-table .cic-entry-item-column {
     width: 33%;
     min-width: 33%;
+}
+
+.cic-enabled-toggle {
+    min-width: 2.5rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #198754;
+    border-radius: 0.25rem;
+    background: #fff;
+    color: #198754;
+    font-weight: 700;
 }
 
 .cic-entry-table .cic-entry-price-column {
@@ -448,7 +464,7 @@ button:active,
 .cic-entry-table th,
 .cic-results-table th
  {
-    /* color: red; */
+    color: darkblue;
     white-space: nowrap;
     text-align: center;
     vertical-align: middle;
