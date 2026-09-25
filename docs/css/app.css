@@ -343,7 +343,8 @@ button:active,
 }
 
 .ceo-results-table th {
-    color: red;
+    color: green;
+    /* color: red; */
 }
 
 .ceo-results-table th:first-child {
@@ -377,7 +378,6 @@ button:active,
     text-align: center;
 }
 
-.cic-table th:first-child,
 .cic-cashflow-table th:first-child {
     text-align: left;
 }
@@ -419,12 +419,6 @@ button:active,
     text-align: center;
 }
 
-.cic-entry-table th:last-child,
-.cic-entry-table td:last-child {
-    border: none !important;
-    background: transparent;
-}
-
 .cic-entry-table td:nth-child(4) .form-control {
     min-width: 4.5rem;
 }
@@ -446,10 +440,19 @@ button:active,
     width: 17.33%;
 }
 
-.cic-results-table th:first-child,
-.cic-results-table td:first-child,
-.cic-results-table td:not(:first-child) {
+.cic-table td:first-child {
+    text-align: left;
+}
+
+
+.cic-entry-table th,
+.cic-results-table th
+ {
+    /* color: red; */
     white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {

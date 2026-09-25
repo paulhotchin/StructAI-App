@@ -3,6 +3,7 @@
     {
       "Name": "Site Geometry",
       "Description": "Define site north and boundary polygon.",
+      "RequiresSaveButton": true,
       "Fields": [
         {
           "Name": "RealNorthDegrees",

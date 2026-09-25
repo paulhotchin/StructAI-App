@@ -5,6 +5,7 @@
     {
       "id": "DataEntry",
       "title": "Enter your time inputs",
+      "requiresSaveButton": true,
       "fields": [
         {
           "id": "WeeksPerYear",
@@ -32,6 +33,7 @@
     {
       "id": "Results",
       "title": "Results",
+      "requiresSaveButton": false,
       "fields": [
         {
           "id": "AnnualHours",
