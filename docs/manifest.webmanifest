@@ -1,0 +1,28 @@
+{
+  "name": "StructAI",
+  "short_name": "StructAI",
+  "id": "/StructAI-App/",
+  "start_url": "/StructAI-App/",
+  "scope": "/StructAI-App/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#03173d",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/StructAI-App/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/StructAI-App/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/StructAI-App/favicon.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    }
+  ]
+}

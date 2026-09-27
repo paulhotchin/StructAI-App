@@ -9,8 +9,9 @@ $reposName   = "StructAI-App"
 # Paths
 $srcRoot   = "E:\work\TQ\Kepler\StructAI\StructAI.App"
 $reposRoot = "E:\work\TQ\Repos"
+$tempRoot  = "E:\work\TQ\TempRepos"
 
-$publish = "E:\work\TQ\Repos\Deploy\$id\wwwroot"
+$publish = "$tempRoot\$id\wwwroot"
 $deploy  = "$srcRoot\wwwroot.deploy.$id"
 $docs    = "$reposRoot\$accountName-$reposName\docs"
 
@@ -24,7 +25,10 @@ Write-Host "=== Copying published build ==="
 robocopy $publish $docs /MIR
 
 Write-Host "=== Overlaying deploy-specific files ==="
-robocopy $deploy $docs /E
+robocopy $deploy $docs /E /IS /IT
+
+Write-Host "=== Cleaning temporary publish folder ==="
+Remove-Item "$tempRoot\$id" -Recurse -Force
 
 Write-Host "=== Committing and pushing to GitHub ==="
 cd "$reposRoot\$accountName-$reposName"
