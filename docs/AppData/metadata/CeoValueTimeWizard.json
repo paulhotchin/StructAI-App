@@ -1,0 +1,59 @@
+{
+  "id": "CeoValueTime",
+  "title": "CEO - Value Your Time",
+  "steps": [
+    {
+      "id": "DataEntry",
+      "title": "Enter your time inputs",
+      "requiresSaveButton": true,
+      "fields": [
+        {
+          "id": "WeeksPerYear",
+          "label": "Weeks per year",
+          "type": "number",
+          "bind": "WeeksPerYear",
+          "required": true
+        },
+        {
+          "id": "HoursPerWeek",
+          "label": "Hours per week",
+          "type": "number",
+          "bind": "HoursPerWeek",
+          "required": true
+        },
+        {
+          "id": "AnnualGrowthPercent",
+          "label": "Annual growth percentage",
+          "type": "number",
+          "bind": "AnnualGrowthPercent",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "Results",
+      "title": "Results",
+      "requiresSaveButton": false,
+      "fields": [
+        {
+          "id": "AnnualHours",
+          "label": "Annual hours",
+          "type": "calculated",
+          "bind": "AnnualHours"
+        },
+        {
+          "id": "AnnualValue",
+          "label": "Annual value",
+          "type": "calculated",
+          "bind": "AnnualValue"
+        },
+        {
+          "id": "AnnualValueWithGrowth",
+          "label": "Annual value with growth",
+          "type": "calculated",
+          "bind": "AnnualValueWithGrowth"
+        }
+      ]
+    }
+  ]
+}

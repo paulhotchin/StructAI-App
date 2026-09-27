@@ -2,7 +2,7 @@
 # StructAI-App Deployment Script
 
 $appName     = "StructAI-App"
-$id          = "StructAI-App"
+$id          = "paulhotchin-StructAI-App"
 $accountName = "paulhotchin"
 $reposName   = "StructAI-App"
 

@@ -1,0 +1,27 @@
+{
+  "id": "CicSalesProjection",
+  "title": "CIC Sales Projection",
+  "steps": [
+    {
+      "id": "PriceList",
+      "title": "ADVanced Insights Analysis and CUSTOMISED Coaching Reports",
+      "description": "Calculate Your Annual Sales & Profits",
+      "requiresSaveButton": true,
+      "fields": []
+    },
+    {
+      "id": "CashFlow",
+      "title": "Cash Flow",
+      "description": "Monthly Cash Flow based on Projected Sales",
+      "requiresSaveButton": false,
+      "fields": []
+    },
+    {
+      "id": "Results",
+      "title": "Sales Results",
+      "description": "Product and Service Revenue",
+      "requiresSaveButton": false,
+      "fields": []
+    }
+  ]
+}
