@@ -1,6 +1,7 @@
 /* E:\work\TQ\Kepler\StructAI\StructAI.App\wwwroot\css\MainLayout.css */
 :root {
-    --structai-css-version: "CSS v1.5";
+    --structai-css-version: "";
+    --ZZstructai-css-version: "CSS v1.5";
     --menu-bar-height: 56px;
     --top-action-bar-height: 60px;
     --bottom-action-bar-height: 90px;
@@ -72,7 +73,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(2px);
     z-index: 2000;
     display: none;
@@ -174,9 +175,7 @@
     overflow-y: auto;
     overflow-x: hidden;
 
-    height: calc(
-        100vh - var(--menu-bar-height) - var(--top-action-bar-height) - var(--bottom-action-bar-height)
-    );
+    height: calc(100vh - var(--menu-bar-height) - var(--top-action-bar-height) - var(--bottom-action-bar-height));
 
     margin-top: calc(var(--menu-bar-height) + var(--top-action-bar-height));
     margin-bottom: var(--bottom-action-bar-height);
@@ -227,12 +226,7 @@
        ============================ */
 
     .wizard-scroll {
-        height: calc(
-            100vh 
-            - var(--menu-bar-height)
-            - var(--top-action-bar-height)
-            - var(--bottom-action-bar-height)
-        );
+        height: calc(100vh - var(--menu-bar-height) - var(--top-action-bar-height) - var(--bottom-action-bar-height));
 
         margin-top: var(--top-action-bar-height);
         margin-bottom: var(--bottom-action-bar-height);

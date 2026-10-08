@@ -285,7 +285,7 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
-      "hash": "sha256-ZHlLL8v+7m0o0pfJtpV1HFmoAKZU7c49Fte4f5kPeTU=",
+      "hash": "sha256-UYAv0Zp9VZHC7PxpK490nz0fCkBu8hV3Apan1Zl26L8=",
       "url": "css\/MainLayout.css"
     },
     {
@@ -325,5 +325,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "cIwhfvaw"
+  "version": "Q+7D5hZ7"
 };
