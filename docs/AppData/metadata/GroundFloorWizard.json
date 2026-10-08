@@ -1,6 +1,7 @@
 {
   "Steps": [
     {
+      "id": "Step1",
       "Name": "Site Geometry",
       "Description": "Define site north and boundary polygon.",
       "RequiresSaveButton": true,
@@ -15,15 +16,21 @@
             "Min": -360,
             "Max": 360
           },
-          "UI": { "Hint": "Degrees clockwise from plan-up" }
+          "UI": {
+            "Hint": "Degrees clockwise from plan-up"
+          }
         },
         {
           "Name": "Boundary",
           "Label": "Boundary Points",
           "Type": "PointList",
           "Bind": "Site.Boundary",
-          "Validation": { "MinCount": 3 },
-          "UI": { "Editor": "PointListEditor" }
+          "Validation": {
+            "MinCount": 3
+          },
+          "UI": {
+            "Editor": "PointListEditor"
+          }
         }
       ]
     }

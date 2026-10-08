@@ -4,10 +4,12 @@
     { "Enabled": "Y", "Name": "ADVanced Insights", "Price": 545, "ProfitFactor": 0.45, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
     { "Enabled": "Y", "Name": "ADV Contract", "Price": 545, "ProfitFactor": 0.88, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
     { "Enabled": "Y", "Name": "Client ADV Repeat", "Price": 545, "ProfitFactor": 0.45, "Units": 16, "Period": 2, "UnitsPerWeek": 0.333, "UnitsPerMonth": 1.333, "UnitsPerYear": 16 },
+    { "Enabled": "Y", "Name": "Client ADV Repeat Contract", "Price": 545, "ProfitFactor": 0.88, "Units": 16, "Period": 2, "UnitsPerWeek": 0.333, "UnitsPerMonth": 1.333, "UnitsPerYear": 16 },
 
     { "Enabled": "Y", "Name": "ADV & Debrief", "Price": 1325, "ProfitFactor": 0.77, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
     { "Enabled": "Y", "Name": "ADV & Debrief Contract", "Price": 1325, "ProfitFactor": 0.95, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
     { "Enabled": "Y", "Name": "Client ADV & Debrief Repeat", "Price": 1325, "ProfitFactor": 0.77, "Units": 16, "Period": 2, "UnitsPerWeek": 0.333, "UnitsPerMonth": 1.333, "UnitsPerYear": 16 },
+    { "Enabled": "Y", "Name": "Client ADV & Debrief Repeat Contract", "Price": 1325, "ProfitFactor": 0.95, "Units": 16, "Period": 2, "UnitsPerWeek": 0.333, "UnitsPerMonth": 1.333, "UnitsPerYear": 16 },
 
     { "Enabled": "Y", "Name": "ADV Pilot of 3", "Price": 1635, "ProfitFactor": 0.45, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
     { "Enabled": "Y", "Name": "ADV Pilot of 3 Contract", "Price": 1635, "ProfitFactor": 0.88, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
@@ -16,6 +18,6 @@
     { "Enabled": "Y", "Name": "ADV Pilot of 6 Contract", "Price": 3000, "ProfitFactor": 0.87, "Units": 1, "Period": 0, "UnitsPerWeek": 1, "UnitsPerMonth": 4, "UnitsPerYear": 48 },
 
     { "Enabled": "Y", "Name": "Coaching Retainer", "Price": 1250, "ProfitFactor": 1.0, "Perennial": true, "Units": 1, "Period": 3, "PeriodLocked": true, "UnitsPerWeek": 0.020833333, "UnitsPerMonth": 0.083333, "UnitsPerYear": 1 },
-    { "Enabled": "Y", "Name": "Client Account AI", "Price": 6200, "ProfitFactor": 1.0, "Perennial": true, "Units": 1, "Period": 4, "PeriodLocked": true, "UnitsPerWeek": 0.020833333, "UnitsPerMonth": 0.083333, "UnitsPerYear": 1 }
+    { "Enabled": "Y", "Name": "Client Account with Proprietary AI", "Price": 6750, "ProfitFactor": 0.40, "Perennial": true, "Units": 1, "Period": 4, "PeriodLocked": true, "UnitsPerWeek": 0.020833333, "UnitsPerMonth": 0.083333, "UnitsPerYear": 1 }
   ]
 }

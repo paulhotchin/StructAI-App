@@ -5,14 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StructAI</title>
-
     <!-- GitHub Pages base path -->
     <base href="/StructAI-App/" />
-	<link rel="manifest" href="manifest.webmanifest" />
-
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <meta name="theme-color" content="#03173d" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="StructAI" />
     <link href="css/MainLayout.css" rel="stylesheet" />
     <link href="css/NavMenu.css" rel="stylesheet" />
 </head>
@@ -31,17 +35,13 @@
         <a href="/StructAI-App/" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-
     <script src="js/storage.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
-    <script src="js/structAI.js"></script>    
-
-    <!-- GitHub Pages PWA service worker -->
+    <script src="js/structAI.js"></script>
     <script>
+        // Offline support. 'service-worker.js' resolves against <base href>, so this works at any path.
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/StructAI-App/service-worker.js', {
-                scope: '/StructAI-App/'
-            });
+            navigator.serviceWorker.register('service-worker.js');
         }
     </script>
 </body>

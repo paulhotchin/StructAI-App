@@ -30,7 +30,8 @@
     font-size: 1rem;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
     /* dull cyan */
     /* color: #7fd0ff !important; */
 
@@ -41,10 +42,6 @@
     /* UI orange */
     /* color: #ffd39b !important;   */
     background-color: #444;
-}
-
-.nav-link.active {
-    background-color: #555;
 }
 
 /* Icon spacing */

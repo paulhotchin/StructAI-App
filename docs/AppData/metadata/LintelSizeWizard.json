@@ -1,0 +1,43 @@
+{
+  "id": "LintelSize",
+  "title": "Lintel Size",
+  "model": "LintelSize",
+  "modelNamespace": "StructAI.App.Model",
+  "steps": [
+    {
+      "id": "Opening",
+      "title": "Opening",
+      "fields": [
+        { "id": "OpeningWidth", "label": "Opening Width (mm)", "type": "number" },
+        { "id": "BrickHeight", "label": "Brick Height (mm)", "type": "number" }
+      ]
+    },
+    {
+      "id": "Loads",
+      "title": "Loads",
+      "fields": [
+        { "id": "LoadAbove", "label": "Load Above (kN)", "type": "number" },
+
+        {
+          "id": "WallType",
+          "label": "Wall Type",
+          "type": "select",
+          "options": [
+            { "label": "Brick", "value": "Brick" },
+            { "label": "Block", "value": "Block" }
+          ]
+        },
+
+        {
+          "id": "LintelType",
+          "label": "Lintel Type",
+          "type": "select",
+          "options": [
+            { "label": "Steel", "value": "Steel" },
+            { "label": "Concrete", "value": "Concrete" }
+          ]
+        }
+      ]
+    }
+  ]
+}

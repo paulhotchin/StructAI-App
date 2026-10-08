@@ -1,0 +1,238 @@
+{
+    "Steps": [
+        {
+            "id": "Step1",
+            "Name": "House Geometry Configuration",
+            "Description": "Select house geometry parameters.",
+            "RequiresSaveButton": true,
+            "Fields": [
+                {
+                    "Name": "WindSpeed",
+                    "Label": "Wind Speed",
+                    "Type": "Select",
+                    "Bind": "HouseGeometry.WindSpeed",
+                    "Options": [
+                        {
+                            "Value": "N1",
+                            "Label": "N1"
+                        },
+                        {
+                            "Value": "N2",
+                            "Label": "N2"
+                        },
+                        {
+                            "Value": "N3",
+                            "Label": "N3"
+                        },
+                        {
+                            "Value": "C1",
+                            "Label": "C1"
+                        },
+                        {
+                            "Value": "C2",
+                            "Label": "C2"
+                        },
+                        {
+                            "Value": "C3",
+                            "Label": "C3"
+                        },
+                        {
+                            "Value": "C4",
+                            "Label": "C4"
+                        }
+                    ]
+                },
+                {
+                    "Name": "RoofType",
+                    "Label": "Roof Type",
+                    "Type": "Select",
+                    "Bind": "HouseGeometry.RoofType",
+                    "Options": [
+                        {
+                            "Value": "Sheet",
+                            "Label": "Sheet"
+                        },
+                        {
+                            "Value": "Tile",
+                            "Label": "Tile"
+                        }
+                    ]
+                },
+                {
+                    "Name": "TrussMaterial",
+                    "Label": "Truss Material",
+                    "Type": "Select",
+                    "Bind": "HouseGeometry.TrussMaterial",
+                    "Options": [
+                        {
+                            "Value": "C7555ra",
+                            "Label": "C7555ra"
+                        },
+                        {
+                            "Value": "C7575ra",
+                            "Label": "C7575ra"
+                        },
+                        {
+                            "Value": "C7510ra",
+                            "Label": "C7510ra"
+                        },
+                        {
+                            "Value": "C7512ra",
+                            "Label": "C7512ra"
+                        },
+                        {
+                            "Value": "C9055ra",
+                            "Label": "C9055ra"
+                        },
+                        {
+                            "Value": "C9075ra",
+                            "Label": "C9075ra"
+                        },
+                        {
+                            "Value": "C9010ra",
+                            "Label": "C9010ra"
+                        },
+                        {
+                            "Value": "C9012ra",
+                            "Label": "C9012ra"
+                        },
+                        {
+                            "Value": "C9015ra",
+                            "Label": "C9015ra"
+                        }
+                    ]
+                },
+                {
+                    "Name": "TrussSpacing",
+                    "Label": "Truss Spacing (mm)",
+                    "Type": "Select",
+                    "Bind": "HouseGeometry.TrussSpacing",
+                    "Options": [
+                        {
+                            "Value": "600",
+                            "Label": "600"
+                        },
+                        {
+                            "Value": "900",
+                            "Label": "900"
+                        },
+                        {
+                            "Value": "1200",
+                            "Label": "1200"
+                        }
+                    ]
+                },
+                {
+                    "Name": "StudMaterial",
+                    "Label": "Stud Material",
+                    "Type": "Select",
+                    "Bind": "HouseGeometry.StudMaterial",
+                    "Options": [
+                        {
+                            "Value": "C7555ra",
+                            "Label": "C7555ra"
+                        },
+                        {
+                            "Value": "C7575ra",
+                            "Label": "C7575ra"
+                        },
+                        {
+                            "Value": "C7510ra",
+                            "Label": "C7510ra"
+                        },
+                        {
+                            "Value": "C7512ra",
+                            "Label": "C7512ra"
+                        },
+                        {
+                            "Value": "C9055ra",
+                            "Label": "C9055ra"
+                        },
+                        {
+                            "Value": "C9075ra",
+                            "Label": "C9075ra"
+                        },
+                        {
+                            "Value": "C9010ra",
+                            "Label": "C9010ra"
+                        },
+                        {
+                            "Value": "C9012ra",
+                            "Label": "C9012ra"
+                        },
+                        {
+                            "Value": "C9015ra",
+                            "Label": "C9015ra"
+                        }
+                    ]
+                },
+                {
+                    "Name": "StudSpacing",
+                    "Label": "Stud Spacing (mm)",
+                    "Type": "Select",
+                    "Bind": "HouseGeometry.StudSpacing",
+                    "Options": [
+                        {
+                            "Value": "450",
+                            "Label": "450"
+                        },
+                        {
+                            "Value": "600",
+                            "Label": "600"
+                        }
+                    ]
+                },
+                {
+                    "Name": "PlateMaterial",
+                    "Label": "Plate Material",
+                    "Type": "Select",
+                    "Bind": "HouseGeometry.PlateMaterial",
+                    "Options": [
+                        {
+                            "Value": "U754455G550",
+                            "Label": "U754455G550"
+                        },
+                        {
+                            "Value": "U754475G550",
+                            "Label": "U754475G550"
+                        },
+                        {
+                            "Value": "U754410G550",
+                            "Label": "U754410G550"
+                        },
+                        {
+                            "Value": "U904455G550",
+                            "Label": "U904455G550"
+                        },
+                        {
+                            "Value": "U904475G550",
+                            "Label": "U904475G550"
+                        },
+                        {
+                            "Value": "U904410G550",
+                            "Label": "U904410G550"
+                        },
+                        {
+                            "Value": "U904412G550",
+                            "Label": "U904412G550"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "Step2",
+            "Name": "Tie Down Data",
+            "Description": "Enter Tie Down Data",
+            "RequiresSaveButton": true,
+            "Fields": []
+        },
+        {
+            "id": "Step3",
+            "Name": "Results",
+            "Description": "Review selected configuration.",
+            "RequiresSaveButton": false,
+            "Fields": []
+        }
+    ]
+}
