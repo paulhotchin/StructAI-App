@@ -219,7 +219,9 @@ button:active,
 
 .field-label-text {
     margin: 0;
-    flex: 0 0 auto;
+    flex: 0 1 auto;
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .hint-icon {
@@ -260,12 +262,7 @@ button:active,
     flex-wrap: nowrap;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
-}
-
-.point-input {
-    width: 90px !important;
-    max-width: 90px;
-    flex: 0 0 90px;
+    max-width: 100%;
 }
 
 .point-row .btn {
@@ -530,6 +527,7 @@ button:active,
 
 .field-label {
     flex: 0 0 180px;
+    min-width: 0;
 }
 
 .field-label-text {
@@ -537,13 +535,31 @@ button:active,
     margin: 0;
 }
 
-.field .form-control,
+/* Text / select inputs. Numeric inputs use .num-input (below) instead. */
+.field .form-control:not(.num-input),
 .field select,
-.field input[type="text"],
-.field input[type="number"] {
+.field input[type="text"] {
     width: 260px;
-    max-width: 260px;
+    max-width: 100%;
     flex: 0 0 260px;
+}
+
+/* Numeric entry: room for 8 characters, never wider (box-sizing is border-box). */
+.num-input,
+.field .num-input,
+.point-row .num-input {
+    width: calc(8ch + 1.5rem + 2px);
+    min-width: 0;
+    max-width: 100%;
+    flex: 0 0 auto;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.num-input::-webkit-outer-spin-button,
+.num-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* --- COMPLEX FIELD LAYOUT --- */
@@ -552,6 +568,8 @@ button:active,
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+    min-width: 0;
+    max-width: 100%;
 }
 
 /* --- POINT LIST --- */
@@ -560,12 +578,6 @@ button:active,
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
-}
-
-.point-input {
-    width: 90px !important;
-    max-width: 90px;
-    flex: 0 0 90px;
 }
 
 /* --- WIZARD SCROLL --- */
@@ -581,4 +593,79 @@ button:active,
     width: 100%;
     max-width: 400px;
     overflow: hidden;
+}
+
+/* ============================
+   NO HORIZONTAL SCROLLING (all pages)
+   ============================ */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+canvas {
+    max-width: 100%;
+}
+
+.wizard-scroll > *,
+.page-content > * {
+    min-width: 0;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    /* Label on its own line above text / select inputs */
+    .field {
+        flex-wrap: wrap;
+        gap: 0.25rem 0.75rem;
+    }
+
+    .field-label {
+        flex: 1 1 100%;
+    }
+
+    .field .form-control:not(.num-input),
+    .field select,
+    .field input[type="text"] {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    /* Number fields: same as desktop - 180px label, input right after it, one line
+       (label may shrink a little on very narrow screens) */
+    .field-number {
+        flex-wrap: nowrap;
+        gap: 0.75rem;
+    }
+
+    .field-number .field-label {
+        flex: 0 1 180px;
+    }
+
+    /* Boundary point rows: X, Y and Delete always fit */
+    .point-row {
+        gap: 0.4rem;
+    }
+
+    .point-row .btn {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* Hotkey letter in Save / Back / Next (Alt+S / Alt+B / Alt+N); no underline on touch screens */
+.hotkey {
+    text-decoration: underline;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .hotkey {
+        text-decoration: none;
+    }
 }

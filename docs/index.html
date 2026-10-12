@@ -38,12 +38,7 @@
     <script src="js/storage.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="js/structAI.js"></script>
-    <script>
-        // Offline support. 'service-worker.js' resolves against <base href>, so this works at any path.
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js');
-        }
-    </script>
+    <script src="js/sw-register.js"></script>
 </body>
 
 </html>

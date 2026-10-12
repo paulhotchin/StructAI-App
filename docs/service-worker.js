@@ -4,14 +4,21 @@
 // so new pages / JSON / images added under wwwroot need no changes here.
 // After the first successful online visit the app runs with no connection.
 //
-// Strategy: cache-first. A new deployment is downloaded in the background and takes over the next
-// time the app is fully closed and reopened.
+// Strategy: cache-first. A new deployment is downloaded in the background; the page then offers a
+// "new version available - Reload" banner (js/sw-register.js). Without clicking it, the new version
+// takes over the next time the app is fully closed and reopened.
 
 self.importScripts('./service-worker-assets.js');
 
 self.addEventListener('install', event => event.waitUntil(onInstall(event)));
 self.addEventListener('activate', event => event.waitUntil(onActivate(event)));
 self.addEventListener('fetch', event => event.respondWith(onFetch(event)));
+// The page asks a waiting (already downloaded) new version to take over - see js/sw-register.js
+self.addEventListener('message', event => {
+    if (event.data && event.data.type === 'SKIP_WAITING') {
+        self.skipWaiting();
+    }
+});
 
 // Cache storage is shared by every app on the same origin (e.g. all of github.io),
 // so the app's path is part of the name: apps never delete each other's caches.

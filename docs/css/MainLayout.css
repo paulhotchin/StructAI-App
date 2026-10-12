@@ -1,11 +1,18 @@
 /* E:\work\TQ\Kepler\StructAI\StructAI.App\wwwroot\css\MainLayout.css */
 :root {
-    --structai-css-version: "";
-    --ZZstructai-css-version: "CSS v1.5";
+    --structai-css-version: "CSS v1.6";
+    /* 100vh includes the phone browser bars; dvh is the visible height */
+    --app-vh: 100vh;
     --menu-bar-height: 56px;
     --top-action-bar-height: 60px;
     --bottom-action-bar-height: 90px;
     --sidebar-width: 150px;
+}
+
+@supports (height: 100dvh) {
+    :root {
+        --app-vh: 100dvh;
+    }
 }
 
 /* ============================
@@ -72,8 +79,8 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    height: var(--app-vh);
+    background-color: rgba(0,0,0,0.6);
     backdrop-filter: blur(2px);
     z-index: 2000;
     display: none;
@@ -92,7 +99,7 @@
     top: var(--menu-bar-height);
     left: calc(-1 * var(--sidebar-width));
     width: var(--sidebar-width);
-    height: calc(100vh - var(--menu-bar-height));
+    height: calc(var(--app-vh) - var(--menu-bar-height));
     background-color: #333;
     transition: left 0.25s ease-in-out;
     padding-top: 0.5rem;
@@ -136,7 +143,7 @@
     width: var(--sidebar-width);
     background-color: #222;
     color: white;
-    height: 100vh;
+    height: var(--app-vh);
     position: fixed;
     left: 0;
     top: var(--menu-bar-height);
@@ -154,7 +161,7 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    height: calc(100vh - var(--menu-bar-height));
+    height: calc(var(--app-vh) - var(--menu-bar-height));
 }
 
 /* Normal page scroll container */
@@ -175,7 +182,9 @@
     overflow-y: auto;
     overflow-x: hidden;
 
-    height: calc(100vh - var(--menu-bar-height) - var(--top-action-bar-height) - var(--bottom-action-bar-height));
+    height: calc(
+        var(--app-vh) - var(--menu-bar-height) - var(--top-action-bar-height) - var(--bottom-action-bar-height)
+    );
 
     margin-top: calc(var(--menu-bar-height) + var(--top-action-bar-height));
     margin-bottom: var(--bottom-action-bar-height);
@@ -207,7 +216,7 @@
     .page {
         margin-left: 0;
         margin-top: var(--menu-bar-height);
-        height: calc(100vh - var(--menu-bar-height));
+        height: calc(var(--app-vh) - var(--menu-bar-height));
         overflow: hidden;
         padding-top: 0;
     }
@@ -218,7 +227,7 @@
 
     .menu-drawer {
         top: var(--menu-bar-height);
-        height: calc(100vh - var(--menu-bar-height));
+        height: calc(var(--app-vh) - var(--menu-bar-height));
     }
 
     /* ============================
@@ -226,7 +235,12 @@
        ============================ */
 
     .wizard-scroll {
-        height: calc(100vh - var(--menu-bar-height) - var(--top-action-bar-height) - var(--bottom-action-bar-height));
+        height: calc(
+            var(--app-vh) 
+            - var(--menu-bar-height)
+            - var(--top-action-bar-height)
+            - var(--bottom-action-bar-height)
+        );
 
         margin-top: var(--top-action-bar-height);
         margin-bottom: var(--bottom-action-bar-height);
