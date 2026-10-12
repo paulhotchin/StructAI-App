@@ -205,7 +205,7 @@
       "url": "_framework\/System.wasm"
     },
     {
-      "hash": "sha256-x9YGQRr0M+SWzp5qN\/LfqGNazVMyahGjbbuiTSXP8Ck=",
+      "hash": "sha256-l9VCQ1Tk+PyfQ+QW4PJsRGgbItqYI5qrYCl7Ib\/DQr0=",
       "url": "AppData\/metadata\/AppSettings.json"
     },
     {
@@ -329,5 +329,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "Sv+vVU02"
+  "version": "RHksm6WB"
 };
